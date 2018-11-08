@@ -1,6 +1,7 @@
 var x;
 var y;
 var colors;
+var node;
 
 document.getElementById("canvas").addEventListener("click",startLine)
 document.getElementById("canvas").addEventListener("mousedown",function(){
@@ -26,4 +27,14 @@ function startLine(){
     node.style.left=event.clientX - 355 + "px";
     node.style.top=event.clientY  - 200 + "px";
     canvas.appendChild(node);
+}
+
+function select() {
+    var x = document.getElementById("select").value;
+    val1 = parseInt(x);
+    if (val1 ==2){
+        node.style.borderRadius="0%";
+    }else{
+        node.style.borderRadius="50%";
+    }  
 }

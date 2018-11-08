@@ -24,10 +24,13 @@
                     <li><button value ="orange" class="orange bx"onclick="nameColors(this)"></button></li>
                     <li><button value ="white" class="white bx"onclick="nameColors(this)">Eraser</button></li>
                 </ul>
-                <select class="bx sel">
-                    <option value="circle">●</option>
-                    <option value="square">█</option>
-                </select>
+                <form>
+                    <select class="bx sel" >
+                        <option value="1">●</option>
+                        <option id="select" value="2">█</option>
+                    </select>
+                </form>    
+                <button type="button" onclick="select()">GO!</button>
             </div>
         </div>
         <div class="main">
