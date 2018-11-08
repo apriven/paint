@@ -38,7 +38,7 @@ function startLine(){
     node.style.height="8px";
     node.style.backgroundColor=colors;
     node.style.position="absolute";
-    node.style.left=event.clientX - 200+ "px";
-    node.style.top=event.clienty+ "px";
+    node.style.left=event.clientX - 355 + "px";
+    node.style.top=event.clientY  - 105 + "px";
     canvas.appendChild(node);
 }
