@@ -12,7 +12,7 @@
         .sideb {
             background-color: white;
             width: 300px;
-            height: 700px;
+            height: 550px;
             border-top: 10px solid rgba(255, 102, 102, .5);
             border-left: 10px solid rgba(255, 102, 102, .5);
             border-bottom: 10px solid rgba(255, 102, 102, .5);
@@ -23,6 +23,7 @@
             height: 500px;
             border: 1px solid black;
             position: relative;
+            z-index: 12;
         }
 
         .row {
@@ -36,6 +37,7 @@
             border: 10px solid rgba(255, 102, 102, .5);
             padding: 10px;
             position: relative;
+            z-index: 123;
         }
 
         .bx {
@@ -48,23 +50,44 @@
 
         .black {
             background-color: black;
-            top: 10%;
-
+            top: 5%;
         }
-
         .red {
             background-color: red;
-            top: 20%;
+            top: 15%;
         }
-
+        .green {
+            background-color: green;
+            top: 25%;
+        }
+        .yellow {
+            background-color: yellow;
+            top: 35%;
+        }
+        .magenta {
+            background-color: magenta;
+            top: 45%;
+        }
+        .purple {
+            background-color: purple;
+            top: 55%;
+        }
+        .grey {
+            background-color: grey;
+            top: 65%;
+        }
+        .orange {
+            background-color: orange;
+            top: 75%;
+        }
         .white {
             background-color: white;
             border: 1 px solid black;
-            top: 30%;
+            top: 85%;
         }
         .sel{
             height: 20px;
             width: 80px; 
-            top:40%;
+            top:95%;
             left:110px;
         }

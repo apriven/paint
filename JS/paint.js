@@ -1,35 +1,20 @@
-
-// function Lalalal() {
-//     var pen = document.createElement("div");
-//     document.getElementsByTagName("div")[0].setAttribute("position", "relative");
-//     var drawArea = document.getElementById("main");
-//     drawArea.appendChild(pen);
-    
-//     var x = event.clientX;
-//     var y = event.clientY;
-//     pen.style.borderRadius = "50%";
-//     pen.style.left = x + "px";
-//     pen.style.top = y + "px";
-//     pen.style.position = "absolute";
-//     pen.style.backgroundColor = color;
-//     pen.style.height = height;
-//     pen.style.width = width;
-//     pen.style.border = border;  
-// }
-
 var x;
 var y;
 var colors;
 
 document.getElementById("canvas").addEventListener("click",startLine)
-// function showPosition(){
-//     x = event.offsetX;
-//     y = event.offsetY;
-//     startLine();
-// }
+document.getElementById("canvas").addEventListener("mousedown",function(){
+    document.getElementById("canvas").addEventListener("mousemove",startLine)    
+});
+document.getElementById("canvas").addEventListener("mouseup",function(){
+    document.getElementById("canvas").removeEventListener("mousemove",startLine)    
+});
+
+
 function nameColors(e){
 colors=e.value;
 }
+
 function startLine(){
     var canvas = document.getElementById("canvas");
     var node = document.createElement("div");
@@ -39,6 +24,6 @@ function startLine(){
     node.style.backgroundColor=colors;
     node.style.position="absolute";
     node.style.left=event.clientX - 355 + "px";
-    node.style.top=event.clientY  - 105 + "px";
+    node.style.top=event.clientY  - 200 + "px";
     canvas.appendChild(node);
 }
