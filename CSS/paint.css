@@ -47,7 +47,13 @@
             padding: 10px;
             position: relative;
         }
-
+        #new{
+            width: 100px;
+            height: 50px;
+            position: relative;
+            top: 125px;
+            left: 81px;
+        }
         #canvas{
             width: 500px;
             height: 500px;
@@ -56,7 +62,7 @@
             overflow: hidden;
             background-color: white;
             bottom: 5px;
- 
+            display: none;
         }
 
         .bx {
@@ -115,10 +121,9 @@
             width: 50px;
             left: 450px;
         }
-
         .sel{
             height: 20px;
             width: 80px; 
-            top:80%;
-            left:110px;
+            top:10%;
+            left:560px;
         }

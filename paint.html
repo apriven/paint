@@ -14,26 +14,27 @@
         <div class="sideb">
             <div class="buttons">
                 <ul type="none">
-                    <li><button value ="black" class="black bx" onclick="nameColors(this)"></button></li>
-                    <li><button value ="red" class="red bx"onclick="nameColors(this)"></button></li>
-                    <li><button value ="green" class="green bx" onclick="nameColors(this)"></button></li>
-                    <li><button value ="yellow" class="yellow bx"onclick="nameColors(this)"></button></li>
-                    <li><button value ="magenta" class="magenta bx"onclick="nameColors(this)"></button></li>
-                    <li><button value ="purple" class="purple bx"onclick="nameColors(this)"></button></li>
-                    <li><button value ="grey" class="grey bx"onclick="nameColors(this)"></button></li>
-                    <li><button value ="orange" class="orange bx"onclick="nameColors(this)"></button></li>
-                    <li><button value ="white" class="eras bx" onclick="nameColors(this)"></button></li>
+                    <li><button value="black" class="black bx" onclick="nameColors(this)"></button></li>
+                    <li><button value="red" class="red bx" onclick="nameColors(this)"></button></li>
+                    <li><button value="green" class="green bx" onclick="nameColors(this)"></button></li>
+                    <li><button value="yellow" class="yellow bx" onclick="nameColors(this)"></button></li>
+                    <li><button value="magenta" class="magenta bx" onclick="nameColors(this)"></button></li>
+                    <li><button value="purple" class="purple bx" onclick="nameColors(this)"></button></li>
+                    <li><button value="grey" class="grey bx" onclick="nameColors(this)"></button></li>
+                    <li><button value="orange" class="orange bx" onclick="nameColors(this)"></button></li>
+                    <li><button value="white" class="eras bx" onclick="nameColors(this)"></button></li>
                 </ul>
                 <form>
-                    <select class="bx sel" >
+                    <select required class="bx sel">
                         <option value="1">●</option>
                         <option id="select" value="2">█</option>
                     </select>
-                </form>    
+                </form>
                 <!-- <button type="button" onclick="select()">GO!</button> -->
             </div>
         </div>
         <div class="main">
+            <button id ="new"onclick="openCanvas();">Let's get crazy!</button>
             <div id="canvas"></div>
         </div>
     </div>

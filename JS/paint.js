@@ -25,7 +25,7 @@ function startLine(){
     node.style.backgroundColor=colors;
     node.style.position="absolute";
     node.style.left=event.clientX - 705 + "px";
-    node.style.top=event.clientY  - 185 + "px";
+    node.style.top=event.clientY  - 167 + "px";
     canvas.appendChild(node);
 }
 
@@ -37,4 +37,8 @@ function select() {
     }else{
         node.style.borderRadius="50%";
     }  
+}
+function openCanvas() {
+	document.getElementById("new").style.display = "none";
+	document.getElementById("canvas").style.display = "block";
 }
