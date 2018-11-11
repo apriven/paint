@@ -25,16 +25,18 @@
                     <li><button value="white" class="eras bx" onclick="nameColors(this)"></button></li>
                 </ul>
                 <form>
-                    <select required class="bx sel">
-                        <option value="1">●</option>
-                        <option id="select" value="2">█</option>
+                    <select required class="bx sel" >
+                        <option value="1"id="select"onchange="selectStyle()">●</option>
+                        <option value="2"id="select"onchange="selectStyle()">█</option>
                     </select>
                 </form>
-                <!-- <button type="button" onclick="select()">GO!</button> -->
+                <form>
+                    <input id="size" placeholder="Size" type="number" min="01" max="04" />
+                </form>
             </div>
         </div>
         <div class="main">
-            <button id ="new"onclick="openCanvas();">Let's get crazy!</button>
+            <button id="new" onclick="openCanvas();">Let's get crazy!</button>
             <div id="canvas"></div>
         </div>
     </div>
@@ -42,3 +44,8 @@
 </body>
 
 </html>
+
+
+<!-- <button type="button" onclick="select()">GO!</button> -->
+</div>
+</div>

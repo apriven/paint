@@ -54,6 +54,7 @@
             top: 125px;
             left: 81px;
         }
+
         #canvas{
             width: 500px;
             height: 500px;
@@ -123,7 +124,16 @@
         }
         .sel{
             height: 20px;
-            width: 80px; 
-            top:10%;
+            width: 58px; 
+            top:100px;
+            left:560px;sele
+        }
+        #size{
+            position: relative;
+            width: 50px;
+            top:140px;
             left:560px;
+        }
+        #select{
+            
         }
